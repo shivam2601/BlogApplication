@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { requireSignin, adminMiddleware } = require("../controllers/auth");
-const { create, list, remove, read } = require("../controllers/category");
+const { create, list, remove, read } = require("../controllers/tags");
 const { runValidation } = require("../validators");
 const { tagValidator } = require("../validators/tag");
 
